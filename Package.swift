@@ -13,22 +13,30 @@ let package = Package(
             targets: [
                 "SwiftUsdShell",
                 "SwiftUsdShellOpenUSD",
+                "_SwiftUsdShellOpenUSDLink",
             ]
         ),
     ],
     dependencies: [
-        .package(name: "SwiftUsd", url: "https://github.com/Reality2713/SwiftUsd-binaries.git", .exact("0.3.125-macos-arm64.1")),
+        .package(name: "SwiftUsd", url: "https://github.com/Reality2713/SwiftUsd-binaries.git", .exact("0.3.125-macos-arm64.2")),
     ],
     targets: [
         .binaryTarget(
             name: "SwiftUsdShell",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.1/Artifacts/v0.3.125-macos-arm64.1/SwiftUsdShell-0.3.125-macos-arm64.1.xcframework.zip",
-            checksum: "89c533b2adcf9a74d40bfa8993cc0e014727738518af4383dae4e58dc9b3266c"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.2/Artifacts/v0.3.125-macos-arm64.2/SwiftUsdShell-0.3.125-macos-arm64.2.xcframework.zip",
+            checksum: "bfd4de41d25cebee00236a3ee867ea6b93b6fae049ee433bc52ab9a7dc3496dc"
         ),
         .binaryTarget(
             name: "SwiftUsdShellOpenUSD",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.1/Artifacts/v0.3.125-macos-arm64.1/SwiftUsdShellOpenUSD-0.3.125-macos-arm64.1.xcframework.zip",
-            checksum: "5d5e3ce8dd46678259447a6fc8c2257663692b6cb719f651217ba49ade10937c"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.2/Artifacts/v0.3.125-macos-arm64.2/SwiftUsdShellOpenUSD-0.3.125-macos-arm64.2.xcframework.zip",
+            checksum: "79d73d7b769524610b36ab99d7c27caa7b81495c5055e0520b195aa11292a0f5"
+        ),
+        .target(
+            name: "_SwiftUsdShellOpenUSDLink",
+            dependencies: [
+                .product(name: "OpenUSD", package: "SwiftUsd"),
+            ],
+            swiftSettings: [.interoperabilityMode(.Cxx)]
         ),
     ]
 )
