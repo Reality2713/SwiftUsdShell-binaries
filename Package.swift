@@ -18,23 +18,23 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(name: "SwiftUsd", url: "https://github.com/Reality2713/SwiftUsd-binaries.git", .exact("0.3.125-macos-arm64.2")),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.125-macos-arm64.3"),
     ],
     targets: [
         .binaryTarget(
             name: "SwiftUsdShell",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.2/Artifacts/v0.3.125-macos-arm64.2/SwiftUsdShell-0.3.125-macos-arm64.2.xcframework.zip",
-            checksum: "bfd4de41d25cebee00236a3ee867ea6b93b6fae049ee433bc52ab9a7dc3496dc"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.3/Artifacts/v0.3.125-macos-arm64.3/SwiftUsdShell-0.3.125-macos-arm64.3.xcframework.zip",
+            checksum: "a939242c270df5fc1447c6524eda5860685d41d29060f889a1ec2dd1577e656a"
         ),
         .binaryTarget(
             name: "SwiftUsdShellOpenUSD",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.2/Artifacts/v0.3.125-macos-arm64.2/SwiftUsdShellOpenUSD-0.3.125-macos-arm64.2.xcframework.zip",
-            checksum: "79d73d7b769524610b36ab99d7c27caa7b81495c5055e0520b195aa11292a0f5"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.125-macos-arm64.3/Artifacts/v0.3.125-macos-arm64.3/SwiftUsdShellOpenUSD-0.3.125-macos-arm64.3.xcframework.zip",
+            checksum: "e5ab28609cfc2d3a4c398df1801112164cb1805ae7336e33e183702bf0967545"
         ),
         .target(
             name: "_SwiftUsdShellOpenUSDLink",
             dependencies: [
-                .product(name: "OpenUSD", package: "SwiftUsd"),
+                .product(name: "OpenUSD", package: "SwiftUsd-binaries"),
             ],
             swiftSettings: [.interoperabilityMode(.Cxx)]
         ),
