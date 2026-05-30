@@ -1,0 +1,23 @@
+{
+  "version": "0.3.126-macos-arm64.3",
+  "triple": "arm64-apple-macosx15.0",
+  "swiftUsd": {
+    "repository": "/Volumes/Plutonian/_Developer/SwiftUsd",
+    "revision": "fd13a9ccc6fc2686a08b963e09bb738dcf541848",
+    "describe": "v7.0.0-preflight.1",
+    "binaryPackageURL": "https://github.com/Reality2713/SwiftUsd-binaries.git",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsd-binaries/0.3.126-macos-arm64.3/Artifacts/v0.3.126-macos-arm64.3"
+  },
+  "swiftUsdShell": {
+    "repository": "/Volumes/Plutonian/_Developer/SwiftUsdShell",
+    "revision": "51df0cd99f6ec6a80cb4ab5095bf42d85a523bd8",
+    "describe": "0.3.124-9-g51df0cd",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/0.3.126-macos-arm64.3/Artifacts/v0.3.126-macos-arm64.3"
+  },
+  "artifacts": {
+    "_OpenUSD_SwiftBindingHelpers": "331733a4ef41df5980aecf8e9172d6906cff34bdc782fdcbcb0c9b46e61cb23d",
+    "OpenUSD": "b875e0fcb7f7e2a0196337609fbd156d2bf3ef56c4a23a9fec65cb30c66bb371",
+    "SwiftUsdShell": "51eb3e362348b1f2b231b93ecc8a99faa88363243527dfe8779f454cf0576c45",
+    "SwiftUsdShellOpenUSD": "d9b01e55e400e02dcbf49854092568073b16756be6dd47eff927f419bbdba131"
+  }
+}
