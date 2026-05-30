@@ -6,7 +6,7 @@ Current slice:
 
 - macOS arm64 only
 - Xcode 26.5 / Swift 6.2 line
-- `0.3.126-macos-arm64.1`
+- `0.3.126-macos-arm64.2`
 
 `SwiftUsdShellOpenUSD` re-exports `SwiftUsdShell` (since `0.3.125-macos-arm64.3`),
 so a consumer that imports `SwiftUsdShellOpenUSD` gets the contract types too —
