@@ -20,7 +20,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.131-apple-arm64.1"),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.131-apple-arm64.2"),
     ],
     targets: [
         .binaryTarget(
@@ -36,6 +36,7 @@ let package = Package(
         .target(
             name: "_SwiftUsdShellOpenUSDLink",
             dependencies: [
+                .product(name: "_OpenUSD_SwiftBindingHelpers", package: "SwiftUsd-binaries"),
                 .product(name: "OpenUSD", package: "SwiftUsd-binaries"),
             ],
             swiftSettings: [.interoperabilityMode(.Cxx)]
