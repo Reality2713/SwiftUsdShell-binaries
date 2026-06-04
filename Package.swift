@@ -20,7 +20,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.131-apple-arm64.3"),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.131-apple-arm64.4"),
     ],
     targets: [
         .binaryTarget(
