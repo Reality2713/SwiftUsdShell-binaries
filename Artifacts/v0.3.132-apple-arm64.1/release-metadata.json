@@ -1,0 +1,22 @@
+{
+  "artifactAssembly": {
+    "baseArtifacts": "SwiftUsdShell-binaries v0.3.131-apple-arm64.1",
+    "linkShim": "empty dependency carrier; no OpenUSD import"
+  },
+  "artifacts": {
+    "SwiftUsdShell-0.3.132-apple-arm64.1.xcframework.zip": "ddfa3cd3724a0d4f2514dfe41c511f8e112495f998eed108f63d00609c746fbd",
+    "SwiftUsdShellOpenUSD-0.3.132-apple-arm64.1.xcframework.zip": "e75f3e0e208cb4b6d1b44632c7f884b0e5e468de3a38a3ad28ef43256c2a5328"
+  },
+  "platforms": [
+    "ios-arm64",
+    "macos-arm64"
+  ],
+  "swiftUsd": {
+    "binaryVersion": "0.3.131-apple-arm64.1"
+  },
+  "swiftUsdShell": {
+    "describe": "0.3.124-11-gb35e215",
+    "revision": "b35e215a371b88dd899586de69047bb3487d1ed6"
+  },
+  "version": "0.3.132-apple-arm64.1"
+}
