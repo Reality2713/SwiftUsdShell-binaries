@@ -1,10 +1,12 @@
 // swift-tools-version: 6.2
 import PackageDescription
 
+// Auto-generated binary release manifest for iOS and macOS Apple Silicon.
 let package = Package(
     name: "SwiftUsdShell",
     platforms: [
         .iOS(.v26),
+        .macOS(.v14),
     ],
     products: [
         .library(name: "SwiftUsdShell", targets: ["SwiftUsdShell"]),
@@ -18,18 +20,18 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.128-ios-arm64.1"),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.129-apple-arm64.1"),
     ],
     targets: [
         .binaryTarget(
             name: "SwiftUsdShell",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.128-ios-arm64.1/Artifacts/v0.3.128-ios-arm64.1/SwiftUsdShell-0.3.128-ios-arm64.1.xcframework.zip",
-            checksum: "0a826a9e5995dcb6ee3fcc01b64d34fe1076464582afbb596d2e5319daded879"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.129-apple-arm64.1/Artifacts/v0.3.129-apple-arm64.1/SwiftUsdShell-0.3.129-apple-arm64.1.xcframework.zip",
+            checksum: "ddfa3cd3724a0d4f2514dfe41c511f8e112495f998eed108f63d00609c746fbd"
         ),
         .binaryTarget(
             name: "SwiftUsdShellOpenUSD",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.128-ios-arm64.1/Artifacts/v0.3.128-ios-arm64.1/SwiftUsdShellOpenUSD-0.3.128-ios-arm64.1.xcframework.zip",
-            checksum: "a32ada9e6b4ab9c1f652a19e654afcab3ab2e90a6921b97d6258782fb7557235"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.129-apple-arm64.1/Artifacts/v0.3.129-apple-arm64.1/SwiftUsdShellOpenUSD-0.3.129-apple-arm64.1.xcframework.zip",
+            checksum: "e75f3e0e208cb4b6d1b44632c7f884b0e5e468de3a38a3ad28ef43256c2a5328"
         ),
         .target(
             name: "_SwiftUsdShellOpenUSDLink",
