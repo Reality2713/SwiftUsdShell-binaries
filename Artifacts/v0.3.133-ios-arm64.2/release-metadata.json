@@ -1,0 +1,26 @@
+{
+  "version": "0.3.133-ios-arm64.2",
+  "platform": "ios",
+  "triple": "arm64-apple-ios26.0",
+  "libraryIdentifier": "ios-arm64",
+  "swiftModulePlatform": "arm64-apple-ios",
+  "swiftUsd": {
+    "repository": "/Volumes/Plutonian/_Developer/SwiftUsd",
+    "revision": "fd13a9ccc6fc2686a08b963e09bb738dcf541848",
+    "describe": "v7.0.0-preflight.1",
+    "binaryPackageURL": "https://github.com/Reality2713/SwiftUsd-binaries.git",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsd-binaries/v0.3.133-ios-arm64.2/Artifacts/v0.3.133-ios-arm64.2"
+  },
+  "swiftUsdShell": {
+    "repository": "/Volumes/Plutonian/_Developer/SwiftUsdShell",
+    "revision": "b35e215a371b88dd899586de69047bb3487d1ed6",
+    "describe": "0.3.124-11-gb35e215",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.133-ios-arm64.2/Artifacts/v0.3.133-ios-arm64.2"
+  },
+  "artifacts": {
+    "_OpenUSD_SwiftBindingHelpers": "0c730053788eaa2eab96c5c86533d0680a03676729f5bfd6f324f575f8721fb5",
+    "OpenUSD": "d8acbbdbf697baf7c9d227617e94c11d53e0c73af1eb368cbb43c19fbb5ba05f",
+    "SwiftUsdShell": "a1d0b753b309b5ae623bbef0e388b9fb373f2c75baed9677043940d2ba6726a4",
+    "SwiftUsdShellOpenUSD": "4b3f6ac10c89309171e5770e1a2c6a25ab5c5cbf34a155fe94cc63a4ad57aa78"
+  }
+}
