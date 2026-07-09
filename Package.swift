@@ -18,18 +18,18 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.134-macos-arm64.8"),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.134-macos-arm64.10"),
     ],
     targets: [
         .binaryTarget(
             name: "SwiftUsdShell",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.134-macos-arm64.8/Artifacts/v0.3.134-macos-arm64.8/SwiftUsdShell-0.3.134-macos-arm64.8.xcframework.zip",
-            checksum: "0f711da791736daad81cb8d10740919b26f620d644ab9b672aeb61f3f861c87e"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.134-macos-arm64.10/Artifacts/v0.3.134-macos-arm64.10/SwiftUsdShell-0.3.134-macos-arm64.10.xcframework.zip",
+            checksum: "70d1ebe944538875161d46d764c83bae396d22040be960edbb6b8684c4da90cf"
         ),
         .binaryTarget(
             name: "SwiftUsdShellOpenUSD",
-            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.134-macos-arm64.8/Artifacts/v0.3.134-macos-arm64.8/SwiftUsdShellOpenUSD-0.3.134-macos-arm64.8.xcframework.zip",
-            checksum: "5509afb42c686a5fc9c701574d846808b147e5368c950f9dc61386af71e3feb0"
+            url: "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.134-macos-arm64.10/Artifacts/v0.3.134-macos-arm64.10/SwiftUsdShellOpenUSD-0.3.134-macos-arm64.10.xcframework.zip",
+            checksum: "7759f706dfeaa9c3f82abd0cf65818bae2c0f1fe94d33a44a16255e66ef5f64d"
         ),
         .target(
             name: "_SwiftUsdShellOpenUSDLink",
