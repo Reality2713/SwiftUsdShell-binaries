@@ -1,0 +1,52 @@
+{
+  "version": "0.3.134-macos-arm64.8",
+  "platform": "macos",
+  "triple": "arm64-apple-macosx15.0",
+  "libraryIdentifier": "macos-arm64",
+  "swiftModulePlatform": "arm64-apple-macos",
+  "frameworkBundleVersions": {
+    "CFBundleShortVersionString": "0.3.134",
+    "CFBundleVersion": "0.3.134"
+  },
+  "frameworkPlatformMetadata": {
+    "MinimumOSVersion": "",
+    "CFBundleSupportedPlatforms": "",
+    "DTPlatformName": ""
+  },
+  "swiftUsd": {
+    "repository": "/Users/cristiandiaz/Developer/Reality2713Train/SwiftUsd",
+    "revision": "c7f9f652c30edcc7250a4d90d5f7760a19240d9f",
+    "describe": "7.0.1-12-gc7f9f652c3",
+    "binaryPackageURL": "https://github.com/Reality2713/SwiftUsd-binaries.git",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsd-binaries/v0.3.134-macos-arm64.8/Artifacts/v0.3.134-macos-arm64.8"
+  },
+  "swiftUsdShell": {
+    "repository": "/Users/cristiandiaz/Developer/Reality2713Train/SwiftUsdShell",
+    "revision": "d6832ad2172fa959cda4a50bbd2480ffdc018b9d",
+    "describe": "0.3.124-13-gd6832ad-dirty",
+    "artifactBaseURL": "https://raw.githubusercontent.com/Reality2713/SwiftUsdShell-binaries/v0.3.134-macos-arm64.8/Artifacts/v0.3.134-macos-arm64.8"
+  },
+  "openUSDPlugins": {
+    "repository": "/Users/cristiandiaz/Developer/Reality2713Train/OpenUSDPlugins",
+    "revision": "ebb724fefdf4da521285624724eee9c580917c15",
+    "describe": "0.1.40",
+    "sourceBundle": ""
+  },
+  "swiftUsdBinaries": {
+    "repository": "/Users/cristiandiaz/Developer/Reality2713Train/SwiftUsd-binaries",
+    "revision": "ce964664f7280515ac52d263a95d497d59dff34d",
+    "describe": "v0.3.134-macos-arm64.7-3-gce96466"
+  },
+  "swiftUsdShellBinaries": {
+    "repository": "/Users/cristiandiaz/Developer/Reality2713Train/SwiftUsdShell-binaries",
+    "revision": "93c3eb0b56c85e509b50f5724dfe21ef52cb7cff",
+    "describe": "v0.3.134-macos-arm64.7"
+  },
+  "pluginArtifact": null,
+  "artifacts": {
+    "_OpenUSD_SwiftBindingHelpers": "a18f554a9511e1d18ceb5255b4f047415654d2f0c96574493d4e525bfe18cb85",
+    "OpenUSD": "d61336202561dc001eebac3bfea9918fb8775f212cea47ed7e293e3c5ec14549",
+    "SwiftUsdShell": "0f711da791736daad81cb8d10740919b26f620d644ab9b672aeb61f3f861c87e",
+    "SwiftUsdShellOpenUSD": "5509afb42c686a5fc9c701574d846808b147e5368c950f9dc61386af71e3feb0"
+  }
+}
