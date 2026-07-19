@@ -1,0 +1,11 @@
+{
+  "version": "0.3.134-macos-arm64.11",
+  "platform": "macos",
+  "baseTrain": "0.3.134-macos-arm64.10",
+  "kind": "manifest-overlay",
+  "artifacts": {
+    "SwiftUsdShell": "70d1ebe944538875161d46d764c83bae396d22040be960edbb6b8684c4da90cf",
+    "SwiftUsdShellOpenUSD": "7759f706dfeaa9c3f82abd0cf65818bae2c0f1fe94d33a44a16255e66ef5f64d"
+  },
+  "notes": "Reuses the byte-identical .10 shell artifacts and links them through OpenUSDPrelinkedSupport to prevent duplicate Swift runtime registration."
+}

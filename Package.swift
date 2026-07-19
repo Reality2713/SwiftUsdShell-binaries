@@ -18,7 +18,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.134-macos-arm64.10"),
+        .package(url: "https://github.com/Reality2713/SwiftUsd-binaries.git", exact: "0.3.134-macos-arm64.11"),
     ],
     targets: [
         .binaryTarget(
@@ -34,7 +34,12 @@ let package = Package(
         .target(
             name: "_SwiftUsdShellOpenUSDLink",
             dependencies: [
-                .product(name: "OpenUSD", package: "SwiftUsd-binaries"),
+                // The adapter XCFramework is prelinked with the OpenUSD Swift
+                // overlay metadata required by C++ interop. Pull only compiler
+                // interfaces, binding helpers, and native libraries here;
+                // linking the full Swift archive again registers every private
+                // overlay class twice at runtime.
+                .product(name: "OpenUSDPrelinkedSupport", package: "SwiftUsd-binaries"),
             ],
             swiftSettings: [.interoperabilityMode(.Cxx)]
         ),
