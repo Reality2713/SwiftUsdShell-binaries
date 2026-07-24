@@ -1,18 +1,16 @@
-# SwiftUsdShell Binary Package
+# SwiftUsdShell binary package
 
-Binary SwiftPM package for SwiftUsdShell.
+This existing package publishes two deliberately separate surfaces:
 
-Current slice:
+- legacy `SwiftUsdShell` and `SwiftUsdShellOpenUSD` products for LTS consumers;
+- `SwiftUsdShellRuntime`, the self-contained product-neutral runtime used by
+  the OS 27 private engine libraries.
 
-- macOS arm64 only
-- Xcode 26.5 / Swift 6.2 line
-- `0.3.127-macos-arm64.2`
+The `0.5.x` runtime line is produced only by the remote M5 workflow in
+`Reality2713/SwiftUsd-binaries`. The package contains no engine source and owns
+no product capability. Engine repositories depend on a compatible `0.5.x`
+runtime range; app roots pin the exact patch tested by the binary release lock.
 
-`SwiftUsdShellOpenUSD` re-exports `SwiftUsdShell` (since `0.3.125-macos-arm64.3`),
-so a consumer that imports `SwiftUsdShellOpenUSD` gets the contract types too —
-a single import. See the `SwiftUsdShell` source repo README for the model.
-
-This package depends on `SwiftUsd-binaries` for the binary `OpenUSD` product,
-pinned in lockstep to the same slice version.
-It is an iteration accelerator for first-party macOS Apple Silicon builds and
-the first customer-shaped distribution slice.
+A toolchain-only patch updates this package without retagging unchanged
+engines. Version-dependent runtime, plugins, and exact engine tags are still
+tested together before publication.
